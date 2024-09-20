@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color:thistle;
+    color:rgb(53, 19, 53) ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.heading{
+    margin-top: 0.938rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+   
+    text-align: center;
+    text-transform:capitalize;
+    text-shadow: 0px 3px 5px;
+    font-style: italic;
+    font-size:2.500rem ;
+    text-decoration: underline;
+    text-decoration-style:wavy;
+}
+ i{
+    padding: 15px;
+    font-size:3.125rem;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    border: 17px double rgb(53, 19, 53);
+    border-radius: 30px 90px 30px;
+    box-shadow:6px 6px 10px rgb(121, 60, 121) , 0px 6px 10px rgb(121, 60, 121);
+    background-color: rgba(114, 91, 114, 0.395);
+    backdrop-filter: blur(5px);
+    width: 40vw;
+padding: 2rem;
+ 
+}
+#form label{
+    font-size:25px ;
+    font-weight:bolder;
+    padding: 10px 5px 0px ;
+    font-style: italic;
+  text-shadow: 0px 3px 4px;
+}
+#form input{
+margin-bottom: 1rem;
+padding: 5px 30px ;
+transition: all 0.8s ease-in-out;
+width: 10vw;
+font-size:large ;
+font-style: italic;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight:bolder;
+color:rgb(53, 19, 53) ;
+border:10px solid rgba(37, 10, 37, 0.663);
+border-radius: 30px 10px 30px;
+box-shadow:  5px 5px 5px rgb(121, 60, 121) , 0px 5px 5px rgb(121, 60, 121);
+}
+input:hover{
+    color: rgb(51, 7, 51);
+    background-color: thistle;
+    padding: 3px;
+}
+input:active{
+    color:rgb(231, 222, 231);
+    background-color: rgb(53, 19, 53 );
+}
+
+#operate input{
+margin-top: 1rem;
+    font-weight:bolder;
+    font-size:small ;
+    transition: all 0.8s ease;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 10px ;
+    border:10px solid rgba(37, 10, 37, 0.663);
+    border-radius: 30px 10px 30px;
+    box-shadow:  5px 5px 5px rgb(121, 60, 121) , 0px 5px 5px rgb(121, 60, 121);
+}
+@media(max-width:1440px){
+    .heading {
+        margin-top: 2.7rem;
+    }
+    h1 {
+        font-size: 3.125rem;
+    }
+    i {
+        padding: 0.750rem;
+        font-size: 3.250rem;
+    }
+    #container {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 45vw;
+    }
+    #form label{
+        font-size: 2.188rem;
+    }
+    #form input
+    {
+        padding: .5rem 3rem;
+        width: 20vw;
+        font-size: 1.250rem;
+    }
+    #operate input{
+        font-size: 1.2rem;
+        padding:.65rem;
+    }
+
+  }
+  
+  @media(max-width:1024px){
+    .heading {
+        margin-top: 1.7rem;
+    }
+    h1 {
+        font-size: 2.125rem;
+    }
+    i {
+        padding: 0.750rem;
+        font-size: 2.450rem;
+    }
+    #container {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 50vw;
+    }
+    #form label{
+        font-size: 1.688rem;
+    }
+    #form input
+    {
+        padding: .5rem 1rem;
+        width: 14vw;
+        font-size: 1.0rem;
+    }
+    #operate input{
+        font-size: .81rem;
+        padding:.45rem;
+    }
+
+
+  }
+  @media(max-width:912px){
+    .heading {
+        margin-top: .115rem;
+    }
+    h1 {
+        font-size: 2.15rem;
+    }
+    i {
+        padding: 0.750rem;
+        font-size: 3.250rem;
+    }
+    #container {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 47vw;
+    }
+    #form label{
+        font-size: 1.3rem;
+    }
+    #form input {
+        border:6px solid rgba(37, 10, 37, 0.663);
+        padding: .5rem 1rem;
+        width: 18vw;
+        font-size: .99rem;
+    }
+    #operate input {
+        border:6px solid rgba(37, 10, 37, 0.663);
+        font-size: .82rem;
+        padding:.5rem;
+    }
+  }
+  @media(max-width:768px){
+    .heading {
+        margin-top: .21rem;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+    i {
+        padding: 0.750rem;
+        font-size: 2.1rem;
+    }
+    #container {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 56vw;
+    }
+    #form label {
+        font-size: 1.42rem;
+    }
+    #form input {
+        
+        padding: .15rem 1rem;
+        width: 15vw;
+        font-size: 1.05rem;
+    }
+    #operate input{
+        font-size: .65rem;
+        padding:.5rem;
+    }
+  }
+  @media(max-width:425px){
+    .heading {
+        margin-top: .25rem;
+    }
+    h1 {
+        font-size: 1.44rem;
+    }
+    i {
+        padding: 0.750rem;
+        font-size: 2rem;
+    }
+    #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 72vw;
+        border:8px double rgba(37, 10, 37, 0.663);
+    }
+    #form label{
+        font-size: 1.2rem;
+    }
+    #form input {
+        border:4px solid rgba(37, 10, 37, 0.663);
+        padding: .15rem 1rem;
+        width: 17vw;
+        font-size: .66rem;
+    }
+    #operate input{
+        border:4px solid rgba(37, 10, 37, 0.663);
+        font-size: .66rem;
+        padding:.465rem;
+    }
+  }
+  @media(max-width:375px){
+    .heading {
+        margin-top: 1rem;
+    }
+    h1 {
+        font-size: 1.744rem;
+    }
+    i {
+        padding: 0.750rem;
+        font-size: 2rem;
+    }
+    #container {
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        width: 64vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    #form label{
+        font-size: 1.2rem;
+    }
+    #form input {
+        margin-top: .5rem;
+        padding: .15rem 1rem;
+        width: 44vw;
+        font-size: .88rem;
+    }
+    #operate input{
+        font-size: .66rem;
+        padding:.365rem;
+    }
+  }
+  @media(max-width:320px){
+    .heading {
+        margin-top: .15rem;
+    }
+    h1 {
+        font-size: 1.55rem;
+    }
+    i {
+        padding: 0.750rem;
+        font-size: 2rem;
+    }
+    #container {
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        width: 70vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border:5px double rgba(37, 10, 37, 0.663);
+        border-radius: 20px 60px 20px
+    }
+    #form label {
+        font-size: 1.2rem;
+    }
+    #form input {
+        
+        margin-top: .2rem;
+        padding: .15rem 1rem;
+        width: 44vw;
+        font-size: .77rem;
+    }
+
+    #operate input {
+        font-size: .66rem;
+        padding:.465rem;
+    }
+  }

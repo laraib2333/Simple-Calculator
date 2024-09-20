@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <!-- CSS Link -->
+
+    <link rel="stylesheet" href="./style.css">
+
+         <!-- Font cdn -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="heading">
+    <h1> Simple Calculator</h1>
+    <i class="fa-solid fa-calculator"></i>
+</div>
+    <div id="container">
+    <div id="form">
+        <form name="myform">
+            <label for="First">First number</label>
+            <input type="textbox" name="txt1"  id="First"><br><br>
+
+            <label for="Second">Second number</label>
+            <input type="textbox" name="txt2"  id="Second"><br><br>
+
+            <label for="result">Result</label>
+            <input type="textbox" name="txt3"  id="result" readonly>
+        </form>
+    </div>
+    <div id="operate">
+        <form id="myform1">
+           <input type="button" name="btn" value="ADD" onclick="add()">&nbsp;
+            <input type="button" name="btn1" value="SUB" onclick="sub()">&nbsp;
+            <input type="button" name="btn2" value="MUL" onclick="mul()">&nbsp;
+            <input type="button" name="btn3" value="DIV" onclick="div()">&nbsp;
+            <input type="button" name="btn4" value="Per" onclick="per()">&nbsp;<br><br>
+      
+    </div></div>
+    <script src="./scrip.js"></script>
+</body>
+</html>
